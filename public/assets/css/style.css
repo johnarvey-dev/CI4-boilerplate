@@ -23971,6 +23971,25 @@ table.dataTable tbody td.select-checkbox:after {
   color: initial;
 }
 
+.page-body-wrapper-a {
+  min-height: calc(100vh - 60px);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 60px;
+}
+.page-body-wrapper-b {
+  min-height: calc(100vh - 60px);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  padding-left: 0;
+  padding-right: 0;
+}
 .page-body-wrapper {
   min-height: calc(100vh - 60px);
   display: -webkit-flex;
@@ -23987,6 +24006,31 @@ table.dataTable tbody td.select-checkbox:after {
   padding-top: 0;
 }
 
+.main-panel-a {
+  transition: width 0.25s ease, margin 0.25s ease;
+  width: calc(100% - 235px);
+  /* width: 100%; */
+  min-height: calc(100vh - 60px);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.main-panel-b {
+  transition: width 0.25s ease, margin 0.25s ease;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+@media (max-width: 991px) {
+  .main-panel {
+    margin-left: 0;
+    width: 100%;
+  }
+}
 .main-panel {
   transition: width 0.25s ease, margin 0.25s ease;
   /* width: calc(100% - 235px); */

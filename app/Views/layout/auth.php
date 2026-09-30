@@ -18,15 +18,11 @@
 </head>
 <body>
     <div class="container-scroller">
-        <?= view('layout/partials/_header') ?>
-        
-        <div class="container-fluid page-body-wrapper-a">
+        <div class="container-fluid page-body-wrapper-b">
             <div class="main-panel-b">
                 <div class="content-wrapper">
                     <?= $this->renderSection('content') ?>
                 </div>
-
-                <?= view('layout/partials/_footer') ?>
             </div>
         </div>
     </div>

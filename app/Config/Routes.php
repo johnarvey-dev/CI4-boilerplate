@@ -4,17 +4,26 @@ use CodeIgniter\Router\RouteCollection;
 
 /** @var RouteCollection $routes */
 
-// Guest router
-$routes->get('/', 'Auth::index');
+// --- Landing Page --- 
+$routes->get('/', 'HomeController::index');
 
-// User router
+// --- Authentication Routes --- 
+$routes->get('/login', 'AuthController::login');
+$routes->post('/login', 'AuthController::attemptLogin');
+$routes->get('/logout', 'AuthController::logout');
+
+// --- Registration routes --- 
+$routes->get('register', 'AuthController::register');
+$routes->post('register', 'AuthController::attemptRegister');
+
+// --- User router --- 
 $routes->group('user', static function ($routes) {
     $routes->addRedirect('', 'user/home');
 
     $routes->get('home', 'UserController::index');
 });
 
-// Admin router
+// --- Admin router --- 
 $routes->group('admin', static function ($routes) {
     $routes->addRedirect('', 'admin/dashboard');
 
