@@ -16,10 +16,3 @@ The `app/Views/` directory is modularly split into role-specific folders to keep
 *   **Modular Layouts:** Fully utilizes CodeIgniter 4 template layouts (`$this->extend()` and `$this->section()`), allowing you to dynamically add or pull out content sections seamlessly.
 *   **Asset Ready:** Structured directory layout paths optimized for linking local assets (Bootstrap, CSS, JS) or external CDNs.
 *   **Security Minded:** Out-of-the-box configuration structures to safely implement authentication filters across specific role folders.
-
-## Environment Prerequisites
-
-*   Linux Mint OS
-*   PHP 8.1+ with `intl`, `mbstring`, and `curl` extensions
-*   Composer
-*   npm & Bootstrap 5

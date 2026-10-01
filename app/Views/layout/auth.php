@@ -15,13 +15,14 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">
 
     <link rel="shortcut icon" href="<?= base_url('assets/images/favicon.png') ?>" />
+    <?= $this->renderSection('pageStyles') ?>
 </head>
 <body>
     <div class="container-scroller">
         <div class="container-fluid page-body-wrapper-b">
             <div class="main-panel-b">
                 <div class="content-wrapper">
-                    <?= $this->renderSection('content') ?>
+                    <?= $this->renderSection('pageContent') ?>
                 </div>
             </div>
         </div>
@@ -35,5 +36,6 @@
     <script src="<?= base_url('assets/js/template.js') ?>"></script>
     <script src="<?= base_url('assets/js/settings.js') ?>"></script>
     <script src="<?= base_url('assets/js/todolist.js') ?>"></script>
+    <?= $this->renderSection('pageScripts') ?>
 </body>
 </html>
